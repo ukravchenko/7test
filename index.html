@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <title>Skeleton example</title>
+  <link rel="stylesheet" href="./js/dgrid/css/dgrid.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <script>
+    dojoConfig = {
+		async: 1,
+		// Load dgrid and its dependencies from a local copy.
+		// If we were loading everything locally, this would not
+		// be necessary, since Dojo would automatically pick up
+		// dgrid, xstyle, and put-selector as siblings of the dojo folder.
+		packages: [
+			{ name: 'dgrid', location: './dgrid' },
+            { name: 'dstore', location: './dstore' },
+		]
+	};
+  </script>
+</head>
+<body>
+    <div id="grid"></div>
+    <br>
+    <button id="update">Обновить</button>
+    <script src="./js/dojo.js" data-dojo-config="async: true"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
